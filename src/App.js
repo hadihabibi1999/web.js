@@ -6,7 +6,7 @@ import Particles from 'react-particles-js'
 const particlesOpt = {
   particles:{
     number:{
-      value:150,
+      value:100,
       destiny:{
         enable:true,
       }
