@@ -1,7 +1,8 @@
 import React from 'react';
-import Navbar from "./navbar";
+//import Navbar from "./navbar";
 import routing from './navbar';
-import Particles from 'react-particles-js'
+import Particles from 'react-particles-js';
+
 
 const particlesOpt = {
   particles:{
@@ -21,7 +22,6 @@ const particlesOpt = {
            {routing}
          <Particles 
             params={particlesOpt}/>
-      
       </div>
      );
   }

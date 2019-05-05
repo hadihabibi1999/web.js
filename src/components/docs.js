@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import { Container, Row, Col} from 'reactstrap';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import Object from './object';
 
 
 
@@ -16,7 +18,7 @@ class Docs extends Component {
                      <div class="card-body">
                           <h5 class="card-title">object</h5>
                           <p class="card-text">Some quick example code about objects in JavaScript</p>
-                          <a href="#" class="btn btn-dark">begin</a>
+                          <Link to='object' class="btn btn-dark">begin</Link>
                      </div>
               </Col>
               <Col className="item-list card-deck bg-light rounded" style={{width:200,margin:40,paddingTop:12}}>
@@ -37,6 +39,7 @@ class Docs extends Component {
                      </div>
                 </Col>
             </Row>
+            <Route path="/object" component={Object} />
           </Container> 
              </div>
          );
