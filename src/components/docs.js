@@ -1,15 +1,14 @@
-import React, { Component } from 'react'
+
+import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import { Container, Row, Col} from 'reactstrap';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import { Route, Link,NavLink, BrowserRouter as Router } from 'react-router-dom';
 import Object from './object';
 
-
-
-class Docs extends Component {
-
-    render() { 
-        return ( 
+class Docs extends React.Component{
+    
+   render() {
+      return ( 
             <div>
              <Container>
             <Row>
@@ -18,7 +17,7 @@ class Docs extends Component {
                      <div class="card-body">
                           <h5 class="card-title">object</h5>
                           <p class="card-text">Some quick example code about objects in JavaScript</p>
-                          <Link to='object' class="btn btn-dark">begin</Link>
+                          <NavLink to='object' class="btn btn-dark">begin</NavLink>
                      </div>
               </Col>
               <Col className="item-list card-deck bg-light rounded" style={{width:200,margin:40,paddingTop:12}}>
@@ -35,15 +34,16 @@ class Docs extends Component {
                           <h5 class="card-title">arrow function</h5>
                           <p class="card-text">Some quick example code about arrow function in JavaScript</p>
                           <a href="#" class="btn btn-warning">begin</a>
-                       
                      </div>
                 </Col>
             </Row>
-            <Route path="/object" component={Object} />
-          </Container> 
-             </div>
-         );
-    }
-}
+   
+              <Route path="/object" component={Object}/>
  
+            </Container> 
+           </div> 
+         );
+      }
+  }
+  
 export default Docs;
