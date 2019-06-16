@@ -20,7 +20,7 @@ const particlesOpt = {
     return ( 
       <div>
            {routing}
-         <Particles 
+           <Particles 
             params={particlesOpt}/>
       </div>
      );

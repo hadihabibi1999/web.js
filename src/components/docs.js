@@ -1,6 +1,8 @@
 
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap.js'
+
 import { Container, Row, Col} from 'reactstrap';
 import { Route, Link,NavLink, BrowserRouter as Router } from 'react-router-dom';
 import Object from './object';
@@ -17,7 +19,7 @@ class Docs extends React.Component{
                      <div class="card-body">
                           <h5 class="card-title">object</h5>
                           <p class="card-text">Some quick example code about objects in JavaScript</p>
-                          <NavLink to='object' class="btn btn-dark">begin</NavLink>
+                          <NavLink to='object' class="btn btn-dark" data-toggle="tooltip" data-placement="right" title="goes to editor">begin</NavLink>
                      </div>
               </Col>
               <Col className="item-list card-deck bg-light rounded" style={{width:200,margin:40,paddingTop:12}}>
@@ -25,7 +27,7 @@ class Docs extends React.Component{
                      <div class="card-body">
                           <h5 class="card-title">redux</h5>
                           <p class="card-text">Some quick example code about redux in JavaScript</p>
-                          <a href="#" class="btn" style={{backgroundColor:'#9D3EC3',color:'white'}} >begin</a>
+                          <a href="#" class="btn" style={{backgroundColor:'#9D3EC3',color:'white'}} data-toggle="tooltip" data-placement="bottom" title="goes to editor">begin</a>
                      </div>
                 </Col>
                 <Col className="item-list card-deck bg-light rounded" style={{width:200,margin:40,paddingTop:12}}>
@@ -33,7 +35,7 @@ class Docs extends React.Component{
                      <div class="card-body">
                           <h5 class="card-title">arrow function</h5>
                           <p class="card-text">Some quick example code about arrow function in JavaScript</p>
-                          <a href="#" class="btn btn-warning">begin</a>
+                          <a href="#" class="btn btn-warning"data-toggle="tooltip" data-placement="left" title="goes to editor">begin</a>
                      </div>
                 </Col>
             </Row>

@@ -9,6 +9,8 @@ import Docs from './components/docs'
 import Description from './components/description'
 import Js from './components/javascript'
 
+import Clock from './components/clock'
+
 const routing = (
   <Router>
     <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor:'#224F7C'}}>
@@ -25,10 +27,9 @@ const routing = (
           <Link className="nav-link" to="/docs">Docs</Link>
         </li> 
       </ul>
-        <form className="form-inline my-2 my-lg-0">
-         <input className="form-control mr-sm-2" style={{backgroundColor:'#F2FBFD'}} type="search" placeholder="Search" aria-label="Search"/>
-         <button className="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-        </form>
+      <div class="position-relative">
+            <Clock/>
+      </div>
     </div>
    </nav>
        <Route path="/docs" component={Docs} />
@@ -37,3 +38,4 @@ const routing = (
  </Router>
 );
 export default routing;
+// <span style={{fontSize:20,color:'#E5E8E8'}}> Created by @Hadi-cyb </span>
